@@ -11,7 +11,7 @@ module.exports = function (source) {
 
 	// You can se a log with the image without query being loaded while isServer is false, but this is NOT the case
 	// with the image that uses the resourceQuery.
-	console.log(options.isServer, this.resourceQuery);
+	console.log(options, this.resourceQuery);
 
 	const returnString = `export default '${imageURL}'`;
 	if (options.isServer) {
